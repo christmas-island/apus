@@ -102,5 +102,15 @@ Install: `swift build -c release` then copy `.build/release/apus` onto PATH.
 ## Related
 
 - `README.md` — full product and CLI documentation
-- `CLAUDE.md` — Claude Code guidance (content absorbed into this file)
 - [Model Context Protocol](https://modelcontextprotocol.io)
+
+## Maintaining this index
+
+- Update the affected `AGENTS.md` files in the same change when paths,
+  responsibilities, commands, dependencies, or conventions change.
+- Keep indexes brief: record semantic entry points and non-obvious
+  constraints; link to existing documentation instead of duplicating it.
+- Add a directory index only when it provides useful navigation beyond its
+  parent; omit generated, vendored, and fixture trees.
+- Do not add `CLAUDE.md` files; Claude Code reads `AGENTS.md` natively, and
+  a `CLAUDE.md` anywhere in the tree stops every `AGENTS.md` from loading.
